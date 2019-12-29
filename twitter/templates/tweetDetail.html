@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Tweet number {{ tweet.id }}{% endblock %}
+
+{% block content %}
+    <div>
+        <h1>{{ tweet.content }}</h1>
+        <h3>by {{ tweet.author.username }}</h3>        
+        <p>{{ tweet.date }}</p>
+    </div>
+    <hr>
+    <h1>Comments</h1>
+    {% if comments == None %}
+        <h3>No Comments</h3>
+    {% else %}
+        {% for comment in comments %}
+            <div>
+                <h2>{{ comment.content }}</h2>
+                <h3>by {{ comment.author.username }}</h3>
+                <p>{{ comment.date }}</p>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

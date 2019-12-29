@@ -1,0 +1,43 @@
+body {
+    font-family: 'Roboto Slab', serif;  
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration-line: none;
+    color: #633e5a;
+    transition: 200ms;
+}
+
+a:hover {
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+/* Nav */
+li {
+    width: 100%;
+    background-color: #fdae55;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: -10px;
+}
+
+li a {
+    font-size: 20px;    
+    padding: 20px;
+    color: white;
+    background-color: #fdae55;
+    text-decoration: none;
+    transition: none;
+}
+
+li a:hover {
+    background-color: #d18530;
+    box-shadow: none;
+}
+
+#logo {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
